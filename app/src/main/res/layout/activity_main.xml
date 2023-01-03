@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".view.activity.MainActivity"
     android:background="@drawable/background"
-    android:paddingHorizontal="20dp"
-    android:paddingTop="90dp">
+    android:paddingHorizontal="10dp"
+    android:paddingTop="40dp">
 
     <TextView
         android:id="@+id/tv_header"
@@ -18,7 +18,8 @@
         android:fontFamily="@font/inter_semibold"
         android:text="Trip plans"
         android:textColor="#D9FFFFFF"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:layout_marginStart="10dp"/>
 
     <EditText
         android:id="@+id/et_search"
@@ -46,6 +47,7 @@
         tools:layout_editor_absoluteX="20dp" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_trip_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/et_search"
