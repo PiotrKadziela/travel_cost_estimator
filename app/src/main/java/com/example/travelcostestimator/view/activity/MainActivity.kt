@@ -2,8 +2,8 @@ package com.example.travelcostestimator.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.travelcostestimator.R
 import com.example.travelcostestimator.databinding.ActivityMainBinding
@@ -35,5 +35,9 @@ class MainActivity : AppCompatActivity() {
             binding.tvNoDataMessage.visibility = View.VISIBLE
         }
 
+        binding.etSearch.isCursorVisible = false
+        binding.etSearch.setOnFocusChangeListener { view: View, b: Boolean ->
+            binding.etSearch.isCursorVisible = true
+        }
     }
 }
