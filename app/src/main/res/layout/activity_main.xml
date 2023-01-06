@@ -16,9 +16,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:fontFamily="@font/inter_semibold"
-        android:text="Trip plans"
-        android:textColor="#D9FFFFFF"
         android:textSize="32sp"
+        android:text="Trip plans"
+        android:textColor="@color/white"
         android:layout_marginStart="10dp"/>
 
     <EditText
@@ -33,8 +33,9 @@
         android:paddingStart="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_header"
-        android:textColor="#F2E7D5"
-        android:textCursorDrawable="@null"/>
+        android:textColor="@color/beige"
+        android:textCursorDrawable="@null"
+        />
 
     <TextView
         android:id="@+id/tv_no_data_message"
