@@ -11,13 +11,10 @@
     android:paddingBottom="40dp">
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="#00000000"
-        android:src="@drawable/ic_arrow_back"
-        />
+        style="@style/back_button"/>
 
     <TextView
         android:id="@+id/tv_header"
@@ -55,11 +52,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:background="@drawable/rounded_edit_text"
             android:hint="Enter destination"
-            android:paddingHorizontal="15dp"
-            android:fontFamily="@font/inter_extralight"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="5dp"
+            style="@style/edit_text"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -80,39 +75,32 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="52dp"
-                android:background="@drawable/rounded_edit_text"
                 android:hint="Start date"
-                android:paddingHorizontal="15dp"
-                android:fontFamily="@font/inter_extralight"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginEnd="10dp"
+                style="@style/edit_text"/>
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="52dp"
-                android:background="@drawable/rounded_edit_text"
                 android:hint="End date"
-                android:paddingHorizontal="15dp"
-                android:fontFamily="@font/inter_extralight"
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="10dp"
+                style="@style/edit_text"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
     <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/btn_add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ll_form"
-        android:background="@drawable/round_button"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="10dp"
         android:src="@drawable/ic_ok"
-        android:backgroundTint="#F2E7D5"
-        />
+        style="@style/oval_image_button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
