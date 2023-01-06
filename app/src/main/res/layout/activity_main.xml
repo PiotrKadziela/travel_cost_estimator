@@ -4,6 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.MainActivity">
+    tools:context=".view.activity.MainActivity"
+    android:background="@drawable/background"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="40dp">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Trip plans"
+        android:textColor="#D9FFFFFF"
+        android:textSize="32sp"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edit_text"
+        android:fontFamily="@font/inter_extralight"
+        android:hint="Search..."
+        android:paddingVertical="8dp"
+        android:paddingStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header"
+        android:textColor="#F2E7D5"
+        android:textCursorDrawable="@null"/>
+
+    <TextView
+        android:id="@+id/tv_no_data_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="There is nothing here :(\nAdd a new trip and start\n planning your travel budget."
+        android:textColor="#D9FFFFFF"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/et_search"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_trip_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_search"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/round_button"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="#F2E7D5"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
