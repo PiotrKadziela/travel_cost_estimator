@@ -1,5 +1,6 @@
 package com.example.travelcostestimator.view.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -39,5 +40,8 @@ class MainActivity : AppCompatActivity() {
         binding.etSearch.setOnFocusChangeListener { view: View, b: Boolean ->
             binding.etSearch.isCursorVisible = true
         }
+
+        val intent = Intent(this, NewTripActivity::class.java)
+        startActivity(intent)
     }
 }
