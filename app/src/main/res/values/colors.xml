@@ -10,4 +10,6 @@
     <color name="grey_light">#8AFFFFFF</color>
     <color name="grey_dark">#7524272C</color>
     <color name="grey_transparent">#4D393E46</color>
+    <color name="button_icon">#1e1e1e</color>
+    <color name="full_transparent">#00000000</color>
 </resources>

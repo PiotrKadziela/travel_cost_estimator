@@ -3,7 +3,6 @@ package com.example.travelcostestimator.view.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.travelcostestimator.R
@@ -41,7 +40,9 @@ class MainActivity : AppCompatActivity() {
             binding.etSearch.isCursorVisible = true
         }
 
-        val intent = Intent(this, NewTripActivity::class.java)
-        startActivity(intent)
+        binding.btnNewTrip.setOnClickListener {
+            val intent = Intent(this, NewTripActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

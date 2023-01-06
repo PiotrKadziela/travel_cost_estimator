@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="edit_text">
+        <item name="android:textColor">@color/beige</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:paddingHorizontal">15dp</item>
+        <item name="android:background">@drawable/rounded_edit_text</item>
+        <item name="android:fontFamily">@font/inter_extralight</item>
+    </style>
+    <style name="oval_image_button">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:backgroundTint">@color/beige</item>
+    </style>
+    <style name="back_button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:backgroundTint">@color/full_transparent</item>
+        <item name="android:src">@drawable/ic_arrow_back</item>
+    </style>
+</resources>
